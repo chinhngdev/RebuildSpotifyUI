@@ -11,6 +11,14 @@
 		34709CFC2BD1702200A6062A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34709CFB2BD1702200A6062A /* ContentView.swift */; };
 		34709CFE2BD1702300A6062A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34709CFD2BD1702300A6062A /* Assets.xcassets */; };
 		34709D012BD1702300A6062A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34709D002BD1702300A6062A /* Preview Assets.xcassets */; };
+		34FB29DD2BD171B800147E6E /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 34FB29DC2BD171B800147E6E /* SDWebImageSwiftUI */; };
+		34FB29E02BD1720A00147E6E /* ImageLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FB29DF2BD1720A00147E6E /* ImageLoaderView.swift */; };
+		34FB29E22BD1730100147E6E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FB29E12BD1730100147E6E /* Constants.swift */; };
+		34FB29E42BD1763900147E6E /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FB29E32BD1763900147E6E /* DatabaseHelper.swift */; };
+		34FB29E62BD17A1E00147E6E /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FB29E52BD17A1E00147E6E /* Product.swift */; };
+		34FB29E82BD17A3E00147E6E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FB29E72BD17A3E00147E6E /* User.swift */; };
+		34FB29EB2BD17CBF00147E6E /* SwiftfulUI in Frameworks */ = {isa = PBXBuildFile; productRef = 34FB29EA2BD17CBF00147E6E /* SwiftfulUI */; };
+		34FB29EE2BD17CFC00147E6E /* SwiftfulRouting in Frameworks */ = {isa = PBXBuildFile; productRef = 34FB29ED2BD17CFC00147E6E /* SwiftfulRouting */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,11 @@
 		34709CFB2BD1702200A6062A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		34709CFD2BD1702300A6062A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34709D002BD1702300A6062A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		34FB29DF2BD1720A00147E6E /* ImageLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderView.swift; sourceTree = "<group>"; };
+		34FB29E12BD1730100147E6E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		34FB29E32BD1763900147E6E /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
+		34FB29E52BD17A1E00147E6E /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		34FB29E72BD17A3E00147E6E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +39,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34FB29EB2BD17CBF00147E6E /* SwiftfulUI in Frameworks */,
+				34FB29EE2BD17CFC00147E6E /* SwiftfulRouting in Frameworks */,
+				34FB29DD2BD171B800147E6E /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +69,7 @@
 			children = (
 				34709CF92BD1702200A6062A /* RebuildSpotifyUIApp.swift */,
 				34709CFB2BD1702200A6062A /* ContentView.swift */,
+				34FB29DE2BD171DD00147E6E /* Shared */,
 				34709CFD2BD1702300A6062A /* Assets.xcassets */,
 				34709CFF2BD1702300A6062A /* Preview Content */,
 			);
@@ -65,6 +82,18 @@
 				34709D002BD1702300A6062A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		34FB29DE2BD171DD00147E6E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				34FB29DF2BD1720A00147E6E /* ImageLoaderView.swift */,
+				34FB29E32BD1763900147E6E /* DatabaseHelper.swift */,
+				34FB29E12BD1730100147E6E /* Constants.swift */,
+				34FB29E52BD17A1E00147E6E /* Product.swift */,
+				34FB29E72BD17A3E00147E6E /* User.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +112,11 @@
 			dependencies = (
 			);
 			name = RebuildSpotifyUI;
+			packageProductDependencies = (
+				34FB29DC2BD171B800147E6E /* SDWebImageSwiftUI */,
+				34FB29EA2BD17CBF00147E6E /* SwiftfulUI */,
+				34FB29ED2BD17CFC00147E6E /* SwiftfulRouting */,
+			);
 			productName = RebuildSpotifyUI;
 			productReference = 34709CF62BD1702200A6062A /* RebuildSpotifyUI.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +145,11 @@
 				Base,
 			);
 			mainGroup = 34709CED2BD1702200A6062A;
+			packageReferences = (
+				34FB29DB2BD171B800147E6E /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				34FB29E92BD17CBF00147E6E /* XCRemoteSwiftPackageReference "SwiftfulUI" */,
+				34FB29EC2BD17CFC00147E6E /* XCRemoteSwiftPackageReference "SwiftfulRouting" */,
+			);
 			productRefGroup = 34709CF72BD1702200A6062A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34FB29E02BD1720A00147E6E /* ImageLoaderView.swift in Sources */,
+				34FB29E42BD1763900147E6E /* DatabaseHelper.swift in Sources */,
 				34709CFC2BD1702200A6062A /* ContentView.swift in Sources */,
 				34709CFA2BD1702200A6062A /* RebuildSpotifyUIApp.swift in Sources */,
+				34FB29E22BD1730100147E6E /* Constants.swift in Sources */,
+				34FB29E62BD17A1E00147E6E /* Product.swift in Sources */,
+				34FB29E82BD17A3E00147E6E /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +324,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +354,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,6 +390,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		34FB29DB2BD171B800147E6E /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.2;
+			};
+		};
+		34FB29E92BD17CBF00147E6E /* XCRemoteSwiftPackageReference "SwiftfulUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+		34FB29EC2BD17CFC00147E6E /* XCRemoteSwiftPackageReference "SwiftfulRouting" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulRouting";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		34FB29DC2BD171B800147E6E /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 34FB29DB2BD171B800147E6E /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		34FB29EA2BD17CBF00147E6E /* SwiftfulUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 34FB29E92BD17CBF00147E6E /* XCRemoteSwiftPackageReference "SwiftfulUI" */;
+			productName = SwiftfulUI;
+		};
+		34FB29ED2BD17CFC00147E6E /* SwiftfulRouting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 34FB29EC2BD17CFC00147E6E /* XCRemoteSwiftPackageReference "SwiftfulRouting" */;
+			productName = SwiftfulRouting;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 34709CEE2BD1702200A6062A /* Project object */;
 }

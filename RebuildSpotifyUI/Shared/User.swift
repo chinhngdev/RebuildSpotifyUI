@@ -23,3 +23,23 @@ struct User: Codable, Identifiable {
     let height: Int
     let weight: Double
 }
+
+extension User {
+    static var mock: User {
+        return .init(
+            id: 444,
+            firstName: "Chinh",
+            lastName: "Ng",
+            age: 70,
+            email: "emai@apple.com",
+            phone: "",
+            username: "",
+            password: "",
+            birthDate: "",
+            image: Constants.randomImage,
+            height: 180,
+            weight: 200
+        )
+    }
+    
+}

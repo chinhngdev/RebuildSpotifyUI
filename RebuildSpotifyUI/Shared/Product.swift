@@ -45,6 +45,7 @@ struct Product: Codable, Identifiable {
             ]
         )
     }
+
 }
 
 struct ProductRow: Identifiable {
